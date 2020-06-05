@@ -230,6 +230,10 @@ MonoBehaviour:
   - {fileID: 1907100246025241869, guid: 5784bd590fbe08d4ca45bbeda4bf593d, type: 3}
   - {fileID: 2545721071361626347, guid: 4e372a8fec4ab6741b281c82f17183bc, type: 3}
   - {fileID: 3302094040950303842, guid: aae70d83454b57d4cad5674d444b905b, type: 3}
+  Quit: {fileID: 1500308895}
+  Score: {fileID: 969827811}
+  BestScore: {fileID: 220287174}
+  Plus: {fileID: 359436212}
 --- !u!1 &109509677
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.45098042, g: 0.427451, b: 0.38823533, a: 1}
+  m_Color: {r: 0.45098042, g: 0.427451, b: 0.38823533, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
