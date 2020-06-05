@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 52008431}
   - component: {fileID: 52008430}
+  - component: {fileID: 52008432}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -199,6 +200,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52008432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52008429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77575386cb23f34783b9a0b8cbbdf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  n:
+  - {fileID: 8702055250393209876, guid: 4a7638d8c9e8f084b838a3686a93cce9, type: 3}
+  - {fileID: 4803194264270212534, guid: c1bb4987a55197642a2ea5c5ca0d8b78, type: 3}
+  - {fileID: 6575995387169179089, guid: b99d06a1fac92a84482dbb6404988979, type: 3}
+  - {fileID: 175598086466516612, guid: 04b4de25fee1024488904fa087224ef6, type: 3}
+  - {fileID: 996045773338523441, guid: e2e77482cc3197d4caa9eaabf2d2281f, type: 3}
+  - {fileID: 678686532978523160, guid: d244e378bc607d04499be8900dd43d46, type: 3}
+  - {fileID: 8917485435724066797, guid: bd61ed3be6f667049adeb84d72ceca28, type: 3}
+  - {fileID: 2108324593998881741, guid: 1219b9d4df36aff4faaf43fa6a3184ba, type: 3}
+  - {fileID: 9134543816998199351, guid: a8a1527fd2a6b4548b8756a19cb0613a, type: 3}
+  - {fileID: 3316414129581572337, guid: 24c1383a6acdf3441a9d6177a322614e, type: 3}
+  - {fileID: 4053802258401262649, guid: e18f5aa6f90a0fc4b9e7c8867b089e2e, type: 3}
+  - {fileID: 7115179435166908265, guid: 470f3140e0253fc4d9ce8c69aafb535a, type: 3}
+  - {fileID: 3681817184026506235, guid: 39b828d1c0ef4984a9cd84aaa06518ce, type: 3}
+  - {fileID: 579367591314957859, guid: 7ac4e014394e9934da2a87e26e53c972, type: 3}
+  - {fileID: 1907100246025241869, guid: 5784bd590fbe08d4ca45bbeda4bf593d, type: 3}
+  - {fileID: 2545721071361626347, guid: 4e372a8fec4ab6741b281c82f17183bc, type: 3}
+  - {fileID: 3302094040950303842, guid: aae70d83454b57d4cad5674d444b905b, type: 3}
 --- !u!1 &109509677
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +554,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 363176096}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52008432}
+        m_MethodName: ReStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &363176096
@@ -842,13 +884,14 @@ GameObject:
   - component: {fileID: 1500308896}
   - component: {fileID: 1500308898}
   - component: {fileID: 1500308897}
+  - component: {fileID: 1500308899}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1500308896
 RectTransform:
   m_ObjectHideFlags: 0
@@ -883,7 +926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.627451}
+  m_Color: {r: 0.9686275, g: 0.9686275, b: 0.93725497, a: 0.627451}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -907,6 +950,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500308895}
   m_CullTransparentMesh: 0
+--- !u!95 &1500308899
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500308895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91fc1ff6308cfbd41bee8349fe8868e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1655512528
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +1049,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1655512531}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 52008432}
+        m_MethodName: ReStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1655512531
